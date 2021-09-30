@@ -1,10 +1,10 @@
 // 01 Nombre pairs
-
+console.log("------------------ 01-------------------")
 var min = 11
 var max = 47
 var sum = 0
 
-for(var i = 11; i < 47; i++){
+for(var i = min; i < 47; i++){
     var even = i % 2 === 0
     if(even){
         console.log(i)
@@ -14,15 +14,15 @@ for(var i = 11; i < 47; i++){
 
 console.log(sum)
 
-// 02 Puissance et racine carrée
+// 02 Nombre impairs
 console.log("------------------ 02-------------------")
 
 var min = 109
 var max = 588
 var sum = 0
 
-for(var i = 109; i < 588; i++){
-    var odd = i % 2 === 1
+for (var i = min; i < max; i++){
+    var odd = i % 2 === 1  // ou if( i % 2 !==0)
     if(odd){
         console.log(i)
         sum = sum + i
@@ -45,9 +45,7 @@ for( var i = 0; i < numbers.length; i++){
 console.log(squares)
 
 for(var i = 0; i < squares.length; i++){
-    console.log(i)
     var racine = Math.sqrt(squares[i])
-    console.log("résultat de : ", racine)
     roots.push(racine)
 }
 console.log(roots)
@@ -65,8 +63,8 @@ for(var i = 0 ; i <= max; i++){
     }
 }
 
-// 5  Table de multiplication v2
-console.log("------------------ 05-------------------")
+// 05  Table de multiplication v2
+// console.log("------------------ 05-------------------")
 
 // for( var i = 0; i < 11; i++){
 //     console.log(i)
@@ -76,7 +74,7 @@ console.log("------------------ 05-------------------")
 // }
 
 
-// 6  Factorielle v1
+// 06  Factorielle v1
 // console.log("------------------ 06-------------------")
 
 // var numbers = [1,2,3,4,5,6,7]
@@ -87,7 +85,11 @@ console.log("------------------ 05-------------------")
 //     console.log(sum)
 // }
 
-// 8 Somme des carrés
+// 07 Factorielle  v2
+// console.log("------------------ 08-------------------")
+
+
+// 08 Somme des carrés
 console.log("------------------ 08-------------------")
 
 var number = 5
@@ -106,12 +108,14 @@ for( var i = 5; i <= 10; i++){
 console.log("------------------ 09-------------------")
 
 var i = 100
+var max = 1000
 
-for(var i = 100; i <= 1000; i++){
-    var modulo = 1000 % 7 === 0
-    if(1000 % 7 === 0){
-    console.log("résultat du modulo : ", modulo)
+    for(var i = 100; i <= 1000; i++){
+        var modulo = 900 % 7 === 0
+
+        
+        if(900 % 7 === 0){
+        console.log("résultat du modulo : ", i)
+        }
     }
-}
-
 
