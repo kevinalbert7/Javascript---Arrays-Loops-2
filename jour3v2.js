@@ -58,7 +58,7 @@ console.log("------------------ 04-------------------")
 
 max = 30
 
-for(var i = 0 ; i < max; i++){
+for(var i = 0 ; i <= max; i++){
     var multiple = i % 3 == 0
     if(multiple){
         console.log(i)
@@ -77,19 +77,41 @@ console.log("------------------ 05-------------------")
 
 
 // 6  Factorielle v1
-console.log("------------------ 06-------------------")
+// console.log("------------------ 06-------------------")
 
-var numbers = [1,2,3,4,5,6,7]
-var i = 0
+// var numbers = [1,2,3,4,5,6,7]
+// var i = 0
 
-for(var i = 0; i < 7; i++){
-    
-    console.log(numbers)
-}
-// console.log(factorielle)
+// for(var i = 0; i < 7; i++){
+//     var sum = sum * (i + 1)
+//     console.log(sum)
+// }
+
 // 8 Somme des carrés
-// console.log("------------------ 07-------------------")
+console.log("------------------ 08-------------------")
 
-// var carré = 0
+var number = 5
+var i = 0
+var sumdescarrés = 0
+console.log("nombres dans le tableau : ", number.length)
 
-// for(var )
+for( var i = 5; i <= 10; i++){
+    var carré = i * i
+    
+    sumdescarrés = sumdescarrés + carré
+    console.log("résultat de la somme : ", sumdescarrés)
+}
+
+// 9 Comptons
+console.log("------------------ 09-------------------")
+
+var i = 100
+
+for(var i = 100; i <= 1000; i++){
+    var modulo = 1000 % 7 === 0
+    if(1000 % 7 === 0){
+    console.log("résultat du modulo : ", modulo)
+    }
+}
+
+
