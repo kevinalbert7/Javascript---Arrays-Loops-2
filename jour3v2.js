@@ -1,15 +1,14 @@
 // 01 Nombre pairs
 console.log("------------------ 01-------------------")
-var min = 11
-var max = 47
+
 var sum = 0
 
-for(var i = min; i < 47; i++){
-    var even = i % 2 === 0
-    if(even){
+for(var i = 11; i < 47; i++){
+    if(i % 2 === 0) {
         console.log(i)
         sum = sum + i
     }
+    console.log(sum)
 }
 
 console.log(sum)
@@ -118,4 +117,3 @@ var max = 1000
         console.log("résultat du modulo : ", i)
         }
     }
-
