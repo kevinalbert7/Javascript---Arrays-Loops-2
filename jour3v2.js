@@ -3,12 +3,11 @@ console.log("------------------ 01-------------------")
 
 var sum = 0
 
-for(var i = 11; i < 47; i++){
+for(var i = 11; i < 47; i++) {
     if(i % 2 === 0) {
         console.log(i)
         sum = sum + i
     }
-    console.log(sum)
 }
 
 console.log(sum)
@@ -16,13 +15,10 @@ console.log(sum)
 // 02 Nombre impairs
 console.log("------------------ 02-------------------")
 
-var min = 109
-var max = 588
 var sum = 0
 
-for (var i = min; i < max; i++){
-    var odd = i % 2 === 1  // ou if( i % 2 !==0)
-    if(odd){
+for (var i = 109; i < 588; i++) {
+    if(i % 2 !== 0) {
         console.log(i)
         sum = sum + i
     }
@@ -36,16 +32,13 @@ var numbers = [1, 2, 3, 4, 5]
 var squares = []
 var roots = []
 
-for( var i = 0; i < numbers.length; i++){
-    console.log(i)
-    var puissance = numbers[i] * numbers[i]
-    squares.push(puissance) 
+for( var i = 0; i < numbers.length; i++) {
+    squares.push(numbers[i] * numbers[i]) 
 }
 console.log(squares)
 
-for(var i = 0; i < squares.length; i++){
-    var racine = Math.sqrt(squares[i])
-    roots.push(racine)
+for(var i = 0; i < squares.length; i++) {
+    roots.push(Math.sqrt(squares[i]))
 }
 console.log(roots)
 
@@ -53,24 +46,27 @@ console.log(roots)
 // 04 Table de multiplication v1
 console.log("------------------ 04-------------------")
 
-max = 30
+var result = 0
 
-for(var i = 0 ; i <= max; i++){
-    var multiple = i % 3 == 0
-    if(multiple){
-        console.log(i)
-    }
+for(var i = 0 ; i <= 10; i++) {
+    result = 3 * i
+    console.log(`3 x ${i} = ${result}`)
 }
 
 // 05  Table de multiplication v2
-// console.log("------------------ 05-------------------")
+console.log("------------------ 05-------------------")
 
-// for( var i = 0; i < 11; i++){
-//     console.log(i)
-//     for(var j = 0; j < 11; j++){
-//         var total = " "
-//     }
-// }
+var result = 0
+
+for(var i = 0; i <= 10; i++) {
+    console.log(i)
+    console.log("")
+    for(var j = 0; j <= 10; j ++) {
+        result = i * j
+        console.log(`${j} x ${i} = ${result}`)
+    }
+}
+
 
 
 // 06  Factorielle v1
