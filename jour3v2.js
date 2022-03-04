@@ -92,18 +92,10 @@ for (var i = 0; i <= 8; i++) {
 // 08 Somme des carrés
 console.log("------------------ 08-------------------")
 
-var number = 5
-var i = 0
-var sumdescarrés = 0
-console.log("nombres dans le tableau : ", number.length)
-
-for( var i = 5; i <= 10; i++){
-    var carré = i * i
-    
-    sumdescarrés = sumdescarrés + carré
-    console.log("résultat de la somme : ", sumdescarrés)
+for (var i = 5; i <= 10; i ++) {
+    var square = i * i
+    console.log(`${i} x ${i} = ${square}`)
 }
-
 // 9 Comptons
 console.log("------------------ 09-------------------")
 
