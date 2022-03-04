@@ -3,7 +3,7 @@ console.log("------------------ 01-------------------")
 
 var sum = 0
 
-for(var i = 11; i < 47; i++) {
+for (var i = 11; i < 47; i++) {
     if(i % 2 === 0) {
         console.log(i)
         sum = sum + i
@@ -32,12 +32,12 @@ var numbers = [1, 2, 3, 4, 5]
 var squares = []
 var roots = []
 
-for( var i = 0; i < numbers.length; i++) {
+for ( var i = 0; i < numbers.length; i++) {
     squares.push(numbers[i] * numbers[i]) 
 }
 console.log(squares)
 
-for(var i = 0; i < squares.length; i++) {
+for (var i = 0; i < squares.length; i++) {
     roots.push(Math.sqrt(squares[i]))
 }
 console.log(roots)
@@ -48,7 +48,7 @@ console.log("------------------ 04-------------------")
 
 var result = 0
 
-for(var i = 0 ; i <= 10; i++) {
+for (var i = 0 ; i <= 10; i++) {
     result = 3 * i
     console.log(`3 x ${i} = ${result}`)
 }
@@ -58,30 +58,35 @@ console.log("------------------ 05-------------------")
 
 var result = 0
 
-for(var i = 0; i <= 10; i++) {
-    console.log(i)
+for (var i = 0; i <= 10; i++) {
     console.log("")
-    for(var j = 0; j <= 10; j ++) {
+    for (var j = 0; j <= 10; j ++) {
         result = i * j
         console.log(`${j} x ${i} = ${result}`)
     }
 }
 
-
-
 // 06  Factorielle v1
-// console.log("------------------ 06-------------------")
+console.log("------------------ 06-------------------")
 
-// var numbers = [1,2,3,4,5,6,7]
-// var i = 0
+var factorial = 7
 
-// for(var i = 0; i < 7; i++){
-//     var sum = sum * (i + 1)
-//     console.log(sum)
-// }
+for (var i = 1; i < 7; i++) {
+    factorial = i * factorial
+}
+
+console.log(factorial)
 
 // 07 Factorielle  v2
-// console.log("------------------ 08-------------------")
+console.log("------------------ 07-------------------")
+
+for (var i = 0; i <= 8; i++) {
+    var factorial = 1
+    for (var j = 1; j <= i; j ++){
+        factorial = j * factorial
+    }
+    console.log(`${i}! = ${factorial}`)
+}
 
 
 // 08 Somme des carrés
