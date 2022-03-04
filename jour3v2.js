@@ -99,14 +99,30 @@ for (var i = 5; i <= 10; i ++) {
 // 9 Comptons
 console.log("------------------ 09-------------------")
 
-var i = 100
-var max = 1000
+var count = 0
 
-    for(var i = 100; i <= 1000; i++){
-        var modulo = 900 % 7 === 0
-
-        
-        if(900 % 7 === 0){
-        console.log("résultat du modulo : ", i)
-        }
+for (var i = 100; i <= 1000; i++) {
+    if ( i % 7 === 0) {
+        count ++
     }
+}
+
+console.log(count)
+
+
+//--------deuxième méthode--------
+
+var array = []
+
+for (var i = 100; i <= 1000; i++) {
+    var modulo = i % 7 === 0
+    if (modulo) {
+        array.push(modulo)
+    }
+}
+
+console.log("2e :", array.length)
+
+
+// 10 Chanceux
+
