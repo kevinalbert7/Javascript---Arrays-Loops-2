@@ -143,7 +143,7 @@ for (var i = 0; i < 20; i++) {
 console.log("randomSup => 5 :", randomSup)
 
 // 11 Des boîtes
-console.log("------------------10-------------------")
+console.log("------------------11-------------------")
 
 // première itération
 
@@ -163,16 +163,33 @@ console.log("------------------10-------------------")
 
 // console.log(i) = 14
 
-var box1 = 12;
-var box2 = 5;
+var box1 = 12
+var box2 = 5
 
 for (var i = 12; i < 14; i++) {
-    box1 = box2;
-    console.log("box1 + box2 :", box1 + box2);
-    box2 = box1 + i;
+    box1 = box2
+    console.log("box1 + box2 :", box1 + box2)
+    box2 = box1 + i
 }
 
-console.log("box1 :", box1);
-console.log("box2 :" ,box2);
-console.log("i :", i);
+console.log("box1 :", box1)
+console.log("box2 :" ,box2)
+console.log("i :", i)
+
+// 12 D'autres boîtes
+console.log("------------------12-------------------")
+
+var box1 = 12
+
+for (var i = 12; i !== 0; i = i - 3) { // 12, 9, 6, 3, 0
+    console.log(box1) // 12, 24, 33, 39
+    box1 = box1 + i // 24, 33, 39, 42
+}
+
+console.log(box1) // 42
+console.log(i) // 0
+
+// 13 Encore d'autres boîtes 
+console.log("------------------13-------------------")
+
 
