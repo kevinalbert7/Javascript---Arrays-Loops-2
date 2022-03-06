@@ -125,4 +125,19 @@ console.log("2e :", array.length)
 
 
 // 10 Chanceux
+console.log("------------------10-------------------")
 
+var min = 1
+var max = 6
+var randomSup = 0
+
+for (var i = 0; i < 20; i++) {
+    var random = Math.floor(Math.random() * (max - min + 1) + min)
+    console.log(random)
+
+    if (random >= 5) {
+        randomSup = randomSup + random
+    }
+}
+
+console.log("randomSup => 5 :", randomSup)
