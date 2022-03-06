@@ -192,4 +192,19 @@ console.log(i) // 0
 // 13 Encore d'autres boîtes 
 console.log("------------------13-------------------")
 
+var box1 = 0
+var box2 = 3
 
+for (var i = 0; i > -4; i--) { // -1, -2, -3, -4
+    if (i % 2 === 0) {
+        console.log(box1 + i) //
+        box2++ //
+    } else {
+        console.log(box2 + i) // 
+        box1-- // 
+    }
+}
+
+console.log(box1) // -1, -1, -2
+console.log(box2) // 3, 4, 4, 5
+console.log(i) // -4
