@@ -141,3 +141,38 @@ for (var i = 0; i < 20; i++) {
 }
 
 console.log("randomSup => 5 :", randomSup)
+
+// 11 Des boîtes
+console.log("------------------10-------------------")
+
+// première itération
+
+// console.log(box1 + box 2) = 10
+// console.log(box1) = 5
+// console.log(box2) = 17
+// console.log(i) = 12
+
+// deuxième itération
+
+// console.log(box1 + box 2) = 34
+// console.log(box1) = 17
+// console.log(box2) = 30
+// console.log(i) = 13
+
+// troisième itération
+
+// console.log(i) = 14
+
+var box1 = 12;
+var box2 = 5;
+
+for (var i = 12; i < 14; i++) {
+    box1 = box2;
+    console.log("box1 + box2 :", box1 + box2);
+    box2 = box1 + i;
+}
+
+console.log("box1 :", box1);
+console.log("box2 :" ,box2);
+console.log("i :", i);
+
